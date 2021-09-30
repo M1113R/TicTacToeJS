@@ -1,0 +1,49 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    color: #C6F6D5;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #22543D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    color: #2F855A;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+.tabuleiro{
+    padding-top: 20%;
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.campo{
+    border-bottom: 5px solid #9AE6B4;
+    border-right: 5px solid #9AE6B4;
+    font-size: 50px;
+    text-align: center;
+    line-height: 95px;
+    user-select: none;
+}
+.campo:nth-child(3n){
+    border-right: none;
+}
+.campo:nth-child(n+7){
+    border-bottom: none;
+}
+
+.campo.vencedor{
+    background-color: #38A169;
+}
